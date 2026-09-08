@@ -31,6 +31,24 @@
       "verification": "VERIFIED"
     },
     {
+      "name": "fw",
+      "version": "0.1.1",
+      "architecture": "all",
+      "platform": "fritzwulf-package-manager",
+      "depends": [],
+      "description": "Fritz.Wulf package manager feed compatibility fix",
+      "download": "packages/fritzwulf/fw/0.1.1/fw-0.1.1.tar.gz",
+      "size": 6157,
+      "sha256": "4c4ffa8a71be838b7350649b5c7e92ec9b70a15792d8b96f2d5071a44a5c59bf",
+      "source_ref": "Fritz-Wulf/fw@v0.1.1",
+      "source_commit": "d4e88d81967b7badd4d042f225bccae8b1658756",
+      "compatibility": "cross-generation-client-foundation",
+      "installable": false,
+      "release_date": "2026-09-08T23:28:31Z",
+      "channel": "stable",
+      "verification": "VERIFIED"
+    },
+    {
       "name": "yourfritz-bootmanager",
       "version": "git-20151230-ec70c1718fe5",
       "architecture": "all",

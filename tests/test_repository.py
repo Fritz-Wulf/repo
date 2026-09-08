@@ -21,6 +21,8 @@ class RepositoryTest(unittest.TestCase):
         self.assertEqual(len(fw), 1)
         self.assertEqual(fw[0]["source_ref"], "Fritz-Wulf/fw@v0.1.0")
         self.assertEqual(fw[0]["sha256"], "968e09eff06b0f63663663e51248623a8ef2bcf8bfbb18f36a415169943fc5bf")
+        versions = sorted(p["version"] for p in idx["packages"] if p["name"] == "fw")
+        self.assertEqual(versions, ["0.1.0", "0.1.1"])
 
     def test_neonwulf_catalog_contract(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
