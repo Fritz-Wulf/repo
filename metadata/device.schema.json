@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fritz.Wulf device profile",
+  "type": "object",
+  "required": [
+    "verification",
+    "model",
+    "architecture",
+    "endianness",
+    "kernel",
+    "libc",
+    "fritzos_versions",
+    "freetz_versions",
+    "package_architecture",
+    "runtime_prefix",
+    "flash_support",
+    "recovery_notes",
+    "known_issues"
+  ],
+  "properties": {
+    "verification": {
+      "enum": [
+        "VERIFIED",
+        "HISTORICAL VERIFIED",
+        "INFERRED",
+        "UNKNOWN"
+      ]
+    },
+    "model": {
+      "type": "string"
+    },
+    "hardware_revision": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "architecture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "endianness": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "kernel": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "libc": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "fritzos_versions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "freetz_versions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "package_architecture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "runtime_prefix": {
+      "type": "string"
+    },
+    "flash_support": {
+      "type": "string"
+    },
+    "recovery_notes": {
+      "type": "string"
+    },
+    "known_issues": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "reference_image": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

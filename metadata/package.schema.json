@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Fritz.Wulf package metadata",
+  "type": "object",
+  "required": [
+    "name",
+    "version",
+    "architecture",
+    "platform",
+    "depends",
+    "description",
+    "download",
+    "size",
+    "sha256",
+    "source_ref",
+    "compatibility"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "architecture": {
+      "type": "string"
+    },
+    "platform": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "download": {
+      "type": "string"
+    },
+    "sha256": {
+      "type": "string"
+    },
+    "source_ref": {
+      "type": "string"
+    },
+    "compatibility": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

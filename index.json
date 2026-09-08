@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "name": "Fritz.Wulf",
+  "base_url": "https://fritz-wulf.github.io/repo/",
+  "architectures": [],
+  "devices": [
+    "3270",
+    "7490",
+    "7530",
+    "7590"
+  ],
+  "packages": []
+}

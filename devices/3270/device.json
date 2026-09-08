@@ -1,0 +1,16 @@
+{
+  "verification": "UNKNOWN",
+  "model": "FRITZ!Box 3270",
+  "hardware_revision": null,
+  "architecture": null,
+  "endianness": null,
+  "kernel": null,
+  "libc": null,
+  "fritzos_versions": [],
+  "freetz_versions": [],
+  "package_architecture": null,
+  "runtime_prefix": "/usb/fritzwulf",
+  "flash_support": "UNKNOWN",
+  "recovery_notes": "Compatibility profile pending verification.",
+  "known_issues": []
+}
