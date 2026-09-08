@@ -1,0 +1,28 @@
+{
+  "verification": "VERIFIED",
+  "model": "FRITZ!Box 7490",
+  "hardware_revision": null,
+  "architecture": "mips32",
+  "endianness": "big",
+  "kernel": "3.10.107",
+  "libc": "uClibc",
+  "fritzos_versions": [
+    "07.62"
+  ],
+  "freetz_versions": [
+    "29656-6e6c5d9c7d-ng26020"
+  ],
+  "package_architecture": "mips32-big-endian-uclibc",
+  "runtime_prefix": "/usb/fritzwulf",
+  "flash_support": "profile-specific only",
+  "recovery_notes": "Verify physical device and AVM recovery path before flashing.",
+  "known_issues": [
+    "AVM libexif UTF-16LE to UTF-8 conversion requires Fritz.Wulf compatibility patch for validated 07.62 library."
+  ],
+  "reference_image": {
+    "filename": "7490_07.62.all_freetz-ng-29656-6e6c5d9c7d-ng26020_20260824-175155.image",
+    "size": 45178880,
+    "sha256": "07d0df777957051d6cd1c8a88d8a01cc7c556a7e70ec2e271d753f3ac1f43727",
+    "freetz_commit": "6e6c5d9c7d98ed150fe5ace0a1effc5b0e7a2f49"
+  }
+}
