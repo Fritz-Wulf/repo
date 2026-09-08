@@ -1,1 +1,110 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Fritz.Wulf Repository</title><style>body{font-family:system-ui,sans-serif;max-width:900px;margin:4rem auto;padding:0 1rem}code{background:#eee;padding:.15rem .3rem}</style></head><body><h1>Fritz.Wulf Repository</h1><p>Device-aware Freetz-NG runtime and package repository.</p><p>Machine-readable index: <a href="index.json">index.json</a></p><h2>Supported profiles</h2><ul><li>3270 — verification pending</li><li>7490 — verified historical reference for FRITZ!OS 07.62</li><li>7530 — verification pending</li><li>7590 — verification pending</li></ul><p>Runtime/package updates are separate from firmware flashing.</p></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#08080d">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Fritz.Wulf – generationsbewusstes Paket-Repository für FRITZ!Box und Freetz-NG.">
+  <title>Fritz.Wulf // Neon Repository</title>
+  <link rel="stylesheet" href="assets/css/neonwulf.css">
+</head>
+<body>
+<div class="scene" aria-hidden="true">
+  <div class="aurora aurora-pink"></div>
+  <div class="aurora aurora-cyan"></div>
+  <div class="horizon-grid"></div>
+  <div class="scanlines"></div>
+</div>
+<main class="shell">
+  <header class="hero">
+    <div>
+      <div class="eyebrow">FRITZ.WULF // PUBLIC PACKAGE CONSTELLATION</div>
+      <div class="brand-row">
+        <div class="wolf-mark" aria-hidden="true"></div>
+        <div>
+          <h1>FRITZ.<span>WULF</span></h1>
+          <p>Generationsbewusstes Paket-Repository für FRITZ!Box, Freetz-NG und die Fritz.Wulf-Runtime. Historische Quellen bleiben sichtbar, installierbare Artefakte werden strikt getrennt.</p>
+        </div>
+      </div>
+    </div>
+    <nav class="hero-actions" aria-label="Projektlinks">
+      <a class="neon-link" href="https://fritz-wulf.github.io/">⌂ Startseite</a>
+      <a class="neon-link" href="index.json">{ } index.json</a>
+      <a class="neon-link" href="https://github.com/Fritz-Wulf/fw">↯ fw</a>
+      <a class="neon-link" href="https://github.com/Fritz-Wulf/repo">↗ GitHub</a>
+    </nav>
+  </header>
+  <section class="stats" aria-label="Repository-Statistik">
+    <article class="stat"><span class="meta-label">PAKETE / VERSIONEN</span><strong id="stat-total">–</strong><small>Einträge im öffentlichen Index</small></article>
+    <article class="stat"><span class="meta-label">INSTALLIERBAR</span><strong id="stat-installable">–</strong><small>für Paketoperationen freigegeben</small></article>
+    <article class="stat"><span class="meta-label">HISTORISCH</span><strong id="stat-historical">–</strong><small>Source-only / nicht installierbar</small></article>
+    <article class="stat"><span class="meta-label">PAKETNAMEN</span><strong id="stat-names">–</strong><small>eindeutige Komponenten</small></article>
+  </section>
+
+  <section class="catalog" aria-labelledby="catalog-title">
+    <div class="catalog-head">
+      <div>
+        <div class="eyebrow">REPOSITORY // LIVE INDEX</div>
+        <h2 id="catalog-title">Paketkatalog</h2>
+        <p>Suche und sortiere alle bekannten Versionen. Der Browser liest dieselbe <code>index.json</code> wie der Paketmanager <code>fw</code>.</p>
+      </div>
+      <div class="status-line" id="repo-status" role="status" aria-live="polite">Index wird geladen …</div>
+    </div>
+
+    <div class="controls" aria-label="Paketfilter">
+      <div class="field">
+        <label for="package-search">Pakete durchsuchen</label>
+        <input id="package-search" type="search" placeholder="Name, Version, Quelle, Beschreibung …" autocomplete="off" spellcheck="false">
+      </div>
+      <div class="field">
+        <label for="architecture-filter">Architektur</label>
+        <select id="architecture-filter"><option value="">Alle Architekturen</option></select>
+      </div>
+      <div class="field">
+        <label for="source-filter">Quelle</label>
+        <select id="source-filter"><option value="">Alle Quellen</option></select>
+      </div>
+      <div class="field">
+        <label for="installable-filter">Status</label>
+        <select id="installable-filter">
+          <option value="">Alle Zustände</option>
+          <option value="yes">Installierbar</option>
+          <option value="no">Historisch / Source-only</option>
+        </select>
+      </div>
+    </div>
+    <div class="catalog-summary">
+      <span class="chip" id="visible-count">0 sichtbar</span>
+      <span id="active-summary">Keine Filter aktiv</span>
+    </div>
+
+    <div class="table-wrap">
+      <table aria-label="Paketliste">
+        <thead>
+          <tr>
+            <th><button class="sort-button" type="button" data-sort="name">Name</button></th>
+            <th><button class="sort-button" type="button" data-sort="version">Version</button></th>
+            <th><button class="sort-button" type="button" data-sort="date">Datum</button></th>
+            <th><button class="sort-button" type="button" data-sort="architecture">Architektur</button></th>
+            <th><button class="sort-button" type="button" data-sort="source">Quelle</button></th>
+            <th><button class="sort-button" type="button" data-sort="installable">Status</button></th>
+            <th><button class="sort-button" type="button" data-sort="size">Größe</button></th>
+            <th>Artefakt</th>
+          </tr>
+        </thead>
+        <tbody id="package-rows"><tr><td class="loading" colspan="8">Index wird geladen …</td></tr></tbody>
+      </table>
+    </div>
+    <div class="mobile-list" id="mobile-package-list" aria-label="Paketliste mobil"></div>
+    <noscript><div class="empty">JavaScript wird für Suche und Sortierung benötigt. Der Rohindex bleibt unter <a href="index.json">index.json</a> verfügbar.</div></noscript>
+  </section>
+
+  <footer>
+    <span>FRITZ.WULF // RETROWAVE PACKAGE MESH // SHA-256</span>
+    <span>Runtime-/Paketupdates sind strikt vom Firmware-Flash getrennt.</span>
+  </footer>
+</main>
+<script type="module" src="assets/js/catalog-app.mjs"></script>
+</body>
+</html>

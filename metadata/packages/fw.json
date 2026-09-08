@@ -1,0 +1,20 @@
+[
+  {
+    "name": "fw",
+    "version": "0.1.0",
+    "architecture": "all",
+    "platform": "fritzwulf-package-manager",
+    "depends": [],
+    "description": "Fritz.Wulf package manager foundation release",
+    "download": "packages/fritzwulf/fw/0.1.0/fw-0.1.0.tar.gz",
+    "size": 6124,
+    "sha256": "968e09eff06b0f63663663e51248623a8ef2bcf8bfbb18f36a415169943fc5bf",
+    "source_ref": "Fritz-Wulf/fw@v0.1.0",
+    "source_commit": "3716b9e6f1d21f6069b9be51ac47846d8163fd5f",
+    "compatibility": "cross-generation-client-foundation",
+    "installable": false,
+    "release_date": "2026-09-08T23:10:44Z",
+    "channel": "stable",
+    "verification": "VERIFIED"
+  }
+]
