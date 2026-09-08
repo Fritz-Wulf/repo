@@ -10,6 +10,18 @@ X-Fritz-Wulf-Platform: fritzwulf-package-manager
 X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
 X-Fritz-Wulf-Installable: no
 
+Package: fw
+Version: 0.1.1
+Architecture: all
+Description: Fritz.Wulf package manager feed compatibility fix
+Filename: packages/fritzwulf/fw/0.1.1/fw-0.1.1.tar.gz
+Size: 6157
+SHA256sum: 4c4ffa8a71be838b7350649b5c7e92ec9b70a15792d8b96f2d5071a44a5c59bf
+Source: Fritz-Wulf/fw@v0.1.1
+X-Fritz-Wulf-Platform: fritzwulf-package-manager
+X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
+X-Fritz-Wulf-Installable: no
+
 Package: yourfritz-bootmanager
 Version: git-20151230-ec70c1718fe5
 Architecture: all
