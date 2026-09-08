@@ -10,7 +10,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
       - run: python3 scripts/build_repository.py
       - run: git diff --exit-code
       - run: python3 scripts/validate_repository.py
       - run: python3 -m unittest -q tests.test_repository
+      - run: node --test tests/catalog-core.test.mjs
+      - run: node --check assets/js/catalog-core.mjs
+      - run: node --check assets/js/catalog-app.mjs
