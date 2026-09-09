@@ -17,6 +17,7 @@ jobs:
       - run: git diff --exit-code
       - run: python3 scripts/validate_repository.py
       - run: python3 -m unittest -q tests.test_repository
+      - run: python3 -m unittest -q tests.test_sync_fw_releases
       - run: node --test tests/catalog-core.test.mjs
       - run: node --check assets/js/catalog-core.mjs
       - run: node --check assets/js/catalog-app.mjs
