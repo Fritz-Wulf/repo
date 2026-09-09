@@ -8,8 +8,13 @@
   "soc_family": "UR8",
   "kernel": "2.6.19.2 / 2.6.32.21 / 2.6.32.41 (firmware-dependent historical references)",
   "libc": "uClibc 0.9.32 (05.50 v3 reference; verify per firmware)",
-  "fritzos_versions": ["05.52", "05.54"],
-  "freetz_versions": ["Freetz/Freetz-NG 3270 v2/v3 profile support"],
+  "fritzos_versions": [
+    "05.52",
+    "05.54"
+  ],
+  "freetz_versions": [
+    "Freetz/Freetz-NG 3270 v2/v3 profile support"
+  ],
   "package_architecture": "mips32-ur8-le",
   "runtime_prefix": "/usb/fritzwulf",
   "flash_support": "PROFILE-ONLY; no current Fritz.Wulf hardware flash validation",
@@ -34,5 +39,25 @@
       "url": "https://www.boxmatrix.info/wiki/Property:CONFIG_CPU_LITTLE_ENDIAN",
       "verification": "INFERRED"
     }
-  ]
+  ],
+  "historical_build": {
+    "verification": "HISTORICAL VERIFIED",
+    "variant": "FRITZ!Box WLAN 3270 v3",
+    "fritzos": "05.54",
+    "freetz_version": "freetz-ng-766MF-acc1f895ff",
+    "build_date": "2026-08-27T16:23:23",
+    "image_name": "3270v3_05.54.ger_freetz-ng-766MF-acc1f895ff_20260827-162323.image",
+    "userspace": "ELF 32-bit LSB MIPS32, uClibc 0.9.32.1",
+    "freetz_info_sha256": "7a69eff4c5e88f8ddf2d065a922e11fc400c739e2c252786428801d232f47aa0",
+    "freetz_version_sha256": "d0441404a3879b5fc074fec7862f7ae5105795a2b2d07f76cde803bc281cffb4",
+    "busybox_sha256": "a7542b34dcc5774885939993798db1e7cf8dfe4eae062dd91103b32791155634",
+    "flash_boot_verified": false,
+    "note": "Extracted historical build payload exists on the build host; no surviving flash/boot log was found in the current inventory."
+  },
+  "reference_stock_image": {
+    "variant": "3270 v3",
+    "fritzos": "05.54",
+    "size": 13076480,
+    "sha256": "009cef6daefa8c31ed8c2562260d4911fa66ec6a304751905c7e5b8a430df1f4"
+  }
 }

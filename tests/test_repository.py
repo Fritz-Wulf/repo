@@ -24,6 +24,16 @@ class RepositoryTest(unittest.TestCase):
         versions = sorted(p["version"] for p in idx["packages"] if p["name"] == "fw")
         self.assertEqual(versions, ["0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.3.0"])
 
+    def test_3270_historical_build_evidence_is_preserved(self):
+        profile = json.loads((ROOT / "devices/3270/device.json").read_text())
+        hist = profile["historical_build"]
+        self.assertEqual(hist["verification"], "HISTORICAL VERIFIED")
+        self.assertEqual(hist["variant"], "FRITZ!Box WLAN 3270 v3")
+        self.assertEqual(hist["fritzos"], "05.54")
+        self.assertEqual(hist["freetz_version"], "freetz-ng-766MF-acc1f895ff")
+        self.assertFalse(hist["flash_boot_verified"])
+        self.assertRegex(hist["busybox_sha256"], r"^[0-9a-f]{64}$")
+
     def test_generation_profiles_are_evidence_backed(self):
         expected = {
             "3270": ("mips32", "little", "ur8"),
