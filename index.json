@@ -85,6 +85,24 @@
       "verification": "VERIFIED"
     },
     {
+      "name": "fw",
+      "version": "0.3.0",
+      "architecture": "all",
+      "platform": "fritzwulf-package-manager",
+      "depends": [],
+      "description": "Fritz.Wulf package manager repository metadata integrity release",
+      "download": "packages/fritzwulf/fw/0.3.0/fw-0.3.0.tar.gz",
+      "size": 6388,
+      "sha256": "a7ac7487aa865afea3810a25b5b082c86c2f828d02b533c00673ed4c09066cbd",
+      "source_ref": "Fritz-Wulf/fw@v0.3.0",
+      "source_commit": "110ecf4f7bc0a2562501e6f2e74e77e1265f9b2c",
+      "compatibility": "cross-generation-client-foundation",
+      "installable": false,
+      "release_date": "2026-09-09T00:46:40Z",
+      "channel": "stable",
+      "verification": "VERIFIED"
+    },
+    {
       "name": "yourfritz-bootmanager",
       "version": "git-20151230-ec70c1718fe5",
       "architecture": "all",
