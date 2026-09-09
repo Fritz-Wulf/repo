@@ -1,0 +1,16 @@
+{
+  "verification": "HISTORICAL VERIFIED",
+  "device": "FRITZ!Box 7490",
+  "fritzos": "07.62",
+  "target": "libexif.so.12.3.4",
+  "patch_range": [43312, 43608],
+  "original_full_sha256": "eb39ec2008372fe6f382728fb96201ff4dbd1c48becfc5978e0f27ed3b50677a",
+  "original_slot_sha256": "b47487188bc06716f6691fd64fe85fd4438b2a2e94a276ed4415aaffe5219487",
+  "generated_blob_sha256": "a1a4d4e065ad19e1d659521efe790037ec9d66b6a28fda4035456d4982576a0b",
+  "patched_slot_sha256": "d9ea47b5af4dc60408f2bd51b3d626d6dc5a7904b7971c0bb34ef32413714ac5",
+  "patched_full_sha256": "87f82cce704c78c0c11f41aeda1096f944e59cd72a07a23c296a6e7ebb8a0208",
+  "patcher_sha256": "40c16ca2ed909c084c49bb5ba07f3738b7df72e2abd15d733eac07fecf97ad17",
+  "converter_source_sha256": "fadf5093a8027968f3b1631b4a0ef0245045c9297943ada550bc6f23a80b2082",
+  "toolchain": ["mips-linux-uclibc-gcc", "mips-linux-uclibc-objcopy", "mips-linux-uclibc-readelf"],
+  "redistributes_vendor_binary": false
+}
