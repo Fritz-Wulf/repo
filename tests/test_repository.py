@@ -142,5 +142,26 @@ class RepositoryTest(unittest.TestCase):
         self.assertIn("gh pr create", workflow)
         self.assertNotIn("git push origin main", workflow)
 
+
+    def test_package_device_targets_are_machine_readable(self):
+        subprocess.run([sys.executable, "scripts/build_repository.py"], cwd=ROOT, check=True)
+        idx = json.loads((ROOT / "index.json").read_text(encoding="utf-8"))
+        supported = {"3270", "7490", "7530", "7590"}
+        for pkg in idx["packages"]:
+            self.assertIn("devices", pkg)
+            self.assertIsInstance(pkg["devices"], list)
+            self.assertEqual(len(pkg["devices"]), len(set(pkg["devices"])))
+            self.assertTrue(set(pkg["devices"]).issubset(supported))
+        for pkg in [p for p in idx["packages"] if p["name"] == "fw"]:
+            self.assertEqual(set(pkg["devices"]), supported)
+        for pkg in [p for p in idx["packages"] if p["platform"] == "source-snapshot"]:
+            self.assertEqual(pkg["devices"], [])
+
+    def test_packages_feed_exposes_device_targets(self):
+        subprocess.run([sys.executable, "scripts/build_repository.py"], cwd=ROOT, check=True)
+        feed = (ROOT / "Packages").read_text(encoding="utf-8")
+        self.assertIn("X-Fritz-Wulf-Devices: 3270,7490,7530,7590", feed)
+        self.assertIn("X-Fritz-Wulf-Devices: none", feed)
+
 if __name__ == "__main__":
     unittest.main()

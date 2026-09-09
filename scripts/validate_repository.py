@@ -32,9 +32,18 @@ for pkg in idx.get("packages", []):
     if key in seen:
         errors.append(f"duplicate package version: {key}")
     seen.add(key)
-    for field in ("name","version","architecture","platform","description","download","size","sha256","source_ref","compatibility"):
+    for field in ("name","version","architecture","platform","description","download","size","sha256","source_ref","compatibility","devices"):
         if field not in pkg:
             errors.append(f"package missing {field}: {key}")
+    devices = pkg.get("devices")
+    if not isinstance(devices, list):
+        errors.append(f"package devices must be a list: {key}")
+    else:
+        if len(devices) != len(set(devices)):
+            errors.append(f"duplicate package device target: {key}")
+        unknown = sorted(set(devices) - set(idx.get("devices", [])))
+        if unknown:
+            errors.append(f"unknown package device target {unknown}: {key}")
     rel = pkg.get("download", "")
     if rel.startswith("/") or ".." in Path(rel).parts:
         errors.append(f"unsafe package path: {rel}")

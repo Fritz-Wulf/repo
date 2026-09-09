@@ -13,7 +13,8 @@
     "size",
     "sha256",
     "source_ref",
-    "compatibility"
+    "compatibility",
+    "devices"
   ],
   "properties": {
     "name": {
@@ -42,6 +43,19 @@
     },
     "compatibility": {
       "type": "string"
+    },
+    "devices": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "3270",
+          "7490",
+          "7530",
+          "7590"
+        ]
+      },
+      "uniqueItems": true
     }
   },
   "additionalProperties": true
