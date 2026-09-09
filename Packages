@@ -34,6 +34,18 @@ X-Fritz-Wulf-Platform: fritzwulf-package-manager
 X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
 X-Fritz-Wulf-Installable: no
 
+Package: fw
+Version: 0.2.1
+Architecture: all
+Description: Fritz.Wulf package manager signature verifier capability discovery
+Filename: packages/fritzwulf/fw/0.2.1/fw-0.2.1.tar.gz
+Size: 5853
+SHA256sum: 01b4b10c7e37b8999f3d943f589cca89b8cfea448d7389b3c854d92e6c2da089
+Source: Fritz-Wulf/fw@v0.2.1
+X-Fritz-Wulf-Platform: fritzwulf-package-manager
+X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
+X-Fritz-Wulf-Installable: no
+
 Package: yourfritz-bootmanager
 Version: git-20151230-ec70c1718fe5
 Architecture: all
