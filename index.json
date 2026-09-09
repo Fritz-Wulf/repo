@@ -133,6 +133,30 @@
       ]
     },
     {
+      "name": "fw",
+      "version": "0.4.0",
+      "architecture": "all",
+      "platform": "fritzwulf-package-manager",
+      "depends": [],
+      "description": "fw v0.4.0",
+      "download": "packages/fritzwulf/fw/0.4.0/fw-0.4.0.tar.gz",
+      "size": 7198,
+      "sha256": "e73c0fc5f0cf3d66c0c3582bf81252c0283fa8f25afc62e2af1af9342bb1a591",
+      "source_ref": "Fritz-Wulf/fw@v0.4.0",
+      "source_commit": "3260d0457ac1eac3bf4a68c2883271dca480a8d1",
+      "compatibility": "cross-generation-client-foundation",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ],
+      "installable": false,
+      "release_date": "2026-09-09T10:34:27Z",
+      "channel": "stable",
+      "verification": "VERIFIED"
+    },
+    {
       "name": "yourfritz-bootmanager",
       "version": "git-20151230-ec70c1718fe5",
       "architecture": "all",
