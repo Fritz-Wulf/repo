@@ -94,6 +94,43 @@
     },
     "reference_image": {
       "type": "object"
+    },
+    "profile_scope": {
+      "type": "string"
+    },
+    "soc_family": {
+      "type": "string"
+    },
+    "soc": {
+      "type": "string"
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "label",
+          "url",
+          "verification"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "pattern": "^https://"
+          },
+          "verification": {
+            "enum": [
+              "VERIFIED",
+              "INFERRED"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
     }
   },
   "additionalProperties": true

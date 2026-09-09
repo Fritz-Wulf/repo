@@ -1,16 +1,38 @@
 {
-  "verification": "UNKNOWN",
-  "model": "FRITZ!Box 3270",
+  "verification": "INFERRED",
+  "model": "FRITZ!Box WLAN 3270",
   "hardware_revision": null,
-  "architecture": null,
-  "endianness": null,
-  "kernel": null,
-  "libc": null,
-  "fritzos_versions": [],
-  "freetz_versions": [],
-  "package_architecture": null,
+  "profile_scope": "3270 v2/v3 family; exact variant must be detected before device-specific operations",
+  "architecture": "mips32",
+  "endianness": "little",
+  "soc_family": "UR8",
+  "kernel": "2.6.19.2 / 2.6.32.21 / 2.6.32.41 (firmware-dependent historical references)",
+  "libc": "uClibc 0.9.32 (05.50 v3 reference; verify per firmware)",
+  "fritzos_versions": ["05.52", "05.54"],
+  "freetz_versions": ["Freetz/Freetz-NG 3270 v2/v3 profile support"],
+  "package_architecture": "mips32-ur8-le",
   "runtime_prefix": "/usb/fritzwulf",
-  "flash_support": "UNKNOWN",
-  "recovery_notes": "Compatibility profile pending verification.",
-  "known_issues": []
+  "flash_support": "PROFILE-ONLY; no current Fritz.Wulf hardware flash validation",
+  "recovery_notes": "Distinguish 3270 v2 and v3 before firmware or recovery operations; never select an image from the family name alone.",
+  "known_issues": [
+    "Historical 3270 firmware generations use different kernels.",
+    "Exact hardware revision and runtime ABI remain to be confirmed from the historical Fritz.Wulf 3270 build/box evidence."
+  ],
+  "evidence": [
+    {
+      "label": "Freetz firmware matrix for 3270 v2/v3",
+      "url": "https://freetz-ng.github.io/freetz-ng/FIRMWARES/",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "BoxMatrix 3270 v3 hardware and 05.50 userspace reference",
+      "url": "https://www.boxmatrix.info/wiki/FRITZ!Box_WLAN_3270_v3",
+      "verification": "INFERRED"
+    },
+    {
+      "label": "BoxMatrix little-endian firmware probe matrix",
+      "url": "https://www.boxmatrix.info/wiki/Property:CONFIG_CPU_LITTLE_ENDIAN",
+      "verification": "INFERRED"
+    }
+  ]
 }
