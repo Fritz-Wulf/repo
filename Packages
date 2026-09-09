@@ -63,6 +63,19 @@ X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
 X-Fritz-Wulf-Devices: 3270,7490,7530,7590
 X-Fritz-Wulf-Installable: no
 
+Package: fw
+Version: 0.4.0
+Architecture: all
+Description: fw v0.4.0
+Filename: packages/fritzwulf/fw/0.4.0/fw-0.4.0.tar.gz
+Size: 7198
+SHA256sum: e73c0fc5f0cf3d66c0c3582bf81252c0283fa8f25afc62e2af1af9342bb1a591
+Source: Fritz-Wulf/fw@v0.4.0
+X-Fritz-Wulf-Platform: fritzwulf-package-manager
+X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
+X-Fritz-Wulf-Devices: 3270,7490,7530,7590
+X-Fritz-Wulf-Installable: no
+
 Package: yourfritz-bootmanager
 Version: git-20151230-ec70c1718fe5
 Architecture: all
