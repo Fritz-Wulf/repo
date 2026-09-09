@@ -1,4 +1,4 @@
-import json, subprocess, sys, unittest
+import ctypes, hashlib, json, re, subprocess, sys, tempfile, unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -23,6 +23,35 @@ class RepositoryTest(unittest.TestCase):
         self.assertEqual(fw[0]["sha256"], "968e09eff06b0f63663663e51248623a8ef2bcf8bfbb18f36a415169943fc5bf")
         versions = sorted(p["version"] for p in idx["packages"] if p["name"] == "fw")
         self.assertEqual(versions, ["0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.3.0"])
+
+    def test_7490_utf16_converter_vectors(self):
+        source = (ROOT / "tools/7490/dlna/wulf_utf16_to_utf8.c").read_text()
+        portable = re.sub(r"static __inline__ unsigned read_le16.*?\n}\n\n", "static unsigned read_le16(const unsigned char *p) { return (unsigned)p[0] | ((unsigned)p[1] << 8); }\n\n", source, count=1, flags=re.S)
+        with tempfile.TemporaryDirectory() as td:
+            cfile, sofile = Path(td)/"converter.c", Path(td)/"converter.so"
+            cfile.write_text(portable)
+            subprocess.run(["cc", "-shared", "-fPIC", "-O2", str(cfile), "-o", str(sofile)], check=True)
+            fn = ctypes.CDLL(str(sofile)).wulf_utf16_to_utf8
+            fn.argtypes = [ctypes.c_void_p, ctypes.c_void_p, ctypes.c_uint]
+            for text in ["ASCII", "ÄÖÜ ß é", "日本語", "😀"]:
+                raw = text.encode("utf-16le") + b"\0\0"; out = ctypes.create_string_buffer(128)
+                fn(out, ctypes.create_string_buffer(raw), len(out)); self.assertEqual(out.value.decode(), text)
+            for raw in [b"\x00\xd8\x00\x00", b"\x00\xdc\x00\x00"]:
+                out = ctypes.create_string_buffer(16); fn(out, ctypes.create_string_buffer(raw), len(out)); self.assertEqual(out.value.decode(), "�")
+            out = ctypes.create_string_buffer(4); raw = "😀".encode("utf-16le") + b"\0\0"
+            fn(out, ctypes.create_string_buffer(raw), len(out)); self.assertEqual(out.value, b"")
+
+    def test_7490_dlna_patch_sources_are_reconstructed(self):
+        meta = json.loads((ROOT / "tools/7490/dlna/metadata.json").read_text())
+        self.assertEqual(meta["verification"], "HISTORICAL VERIFIED")
+        self.assertFalse(meta["redistributes_vendor_binary"])
+        patcher = ROOT / "tools/7490/dlna/patch_avm_libexif_utf16.py"
+        source = ROOT / "tools/7490/dlna/wulf_utf16_to_utf8.c"
+        self.assertEqual(hashlib.sha256(patcher.read_bytes()).hexdigest(), meta["patcher_sha256"])
+        self.assertEqual(hashlib.sha256(source.read_bytes()).hexdigest(), meta["converter_source_sha256"])
+        text = patcher.read_text()
+        for digest in (meta["original_full_sha256"], meta["original_slot_sha256"], meta["generated_blob_sha256"], meta["patched_slot_sha256"], meta["patched_full_sha256"]):
+            self.assertIn(digest, text)
 
     def test_3270_historical_build_evidence_is_preserved(self):
         profile = json.loads((ROOT / "devices/3270/device.json").read_text())
