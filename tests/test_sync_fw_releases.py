@@ -77,5 +77,13 @@ class FwReleaseSyncTest(unittest.TestCase):
             self.run_sync(conflicting)
 
 
+
+    def test_new_fw_release_targets_all_supported_devices(self):
+        entries, _ = self.run_sync()
+        self.assertEqual(
+            entries[0]["devices"],
+            ["3270", "7490", "7530", "7590"],
+        )
+
 if __name__ == "__main__":
     unittest.main()

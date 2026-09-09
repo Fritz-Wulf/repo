@@ -23,6 +23,7 @@ for pkg in catalog:
         f'Source: {pkg["source_ref"]}',
         f'X-Fritz-Wulf-Platform: {pkg["platform"]}',
         f'X-Fritz-Wulf-Compatibility: {pkg["compatibility"]}',
+        f'X-Fritz-Wulf-Devices: {",".join(pkg["devices"]) if pkg["devices"] else "none"}',
         f'X-Fritz-Wulf-Installable: {"yes" if pkg.get("installable", True) else "no"}',
     ]
     if pkg.get("depends"):

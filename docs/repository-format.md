@@ -25,3 +25,6 @@ then `Packages`, `Packages.gz`, `index.json`, and `SHA256SUMS` are rebuilt and
 validated. The workflow never pushes generated changes directly to `main`; it
 opens an automation branch and pull request so the normal validation gate still
 applies. GitHub Pages publishes the new version only after that PR is merged.
+## Device targets
+
+Every package entry carries a machine-readable `devices` array. `fw` releases currently target `3270`, `7490`, `7530`, and `7590`; historical source-only snapshots use an empty array. The generated `Packages` feed exposes the same data as `X-Fritz-Wulf-Devices`, using `none` for an empty target set. Clients must not infer device compatibility from the free-text `compatibility` field.

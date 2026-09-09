@@ -28,7 +28,13 @@
       "installable": false,
       "release_date": "2026-09-08T23:10:44Z",
       "channel": "stable",
-      "verification": "VERIFIED"
+      "verification": "VERIFIED",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ]
     },
     {
       "name": "fw",
@@ -46,7 +52,13 @@
       "installable": false,
       "release_date": "2026-09-08T23:28:31Z",
       "channel": "stable",
-      "verification": "VERIFIED"
+      "verification": "VERIFIED",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ]
     },
     {
       "name": "fw",
@@ -64,7 +76,13 @@
       "installable": false,
       "release_date": "2026-09-09T00:02:55Z",
       "channel": "stable",
-      "verification": "VERIFIED"
+      "verification": "VERIFIED",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ]
     },
     {
       "name": "fw",
@@ -82,7 +100,13 @@
       "installable": false,
       "release_date": "2026-09-09T00:31:00Z",
       "channel": "stable",
-      "verification": "VERIFIED"
+      "verification": "VERIFIED",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ]
     },
     {
       "name": "fw",
@@ -100,7 +124,13 @@
       "installable": false,
       "release_date": "2026-09-09T00:46:40Z",
       "channel": "stable",
-      "verification": "VERIFIED"
+      "verification": "VERIFIED",
+      "devices": [
+        "3270",
+        "7490",
+        "7530",
+        "7590"
+      ]
     },
     {
       "name": "yourfritz-bootmanager",
@@ -117,7 +147,8 @@
       "installable": false,
       "upstream_date": "2015-12-30",
       "upstream_subject": "bootmanager script",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -134,7 +165,8 @@
       "installable": false,
       "upstream_date": "2019-06-18",
       "upstream_subject": "bootmanager: add SPDX identifiers",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -151,7 +183,8 @@
       "installable": false,
       "upstream_date": "2022-01-13",
       "upstream_subject": "bootmanager: separate HTML code creation for older FRITZ!OS versions ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -168,7 +201,8 @@
       "installable": false,
       "upstream_date": "2022-02-13",
       "upstream_subject": "bootmanager: rename 'gui_bootmanager' to 'bootmanager'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -185,7 +219,8 @@
       "installable": false,
       "upstream_date": "2022-02-13",
       "upstream_subject": "bootmanager: rename 'gui_bootmanager' to 'bootmanager'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -202,7 +237,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: change service type and add supervisor notification",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -219,7 +255,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: save urlader environment on first call and as early as possible",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -236,7 +273,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: save urlader environment on first call and as early as possible",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -253,7 +291,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: change service type and add supervisor notification",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -270,7 +309,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: fix shellcheck related changes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -287,7 +327,8 @@
       "installable": false,
       "upstream_date": "2022-02-14",
       "upstream_subject": "bootmanager: fix shellcheck related changes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -304,7 +345,8 @@
       "installable": false,
       "upstream_date": "2022-02-15",
       "upstream_subject": "bootmanager: re-apply changed names for used files",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -321,7 +363,8 @@
       "installable": false,
       "upstream_date": "2022-02-16",
       "upstream_subject": "bootmanager: misplaced shellcheck directive",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -338,7 +381,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: wrong label name + more unique HTML entities",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -355,7 +399,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: add localization of date/time value to 'bootmanager'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -372,7 +417,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: replace escaped quotes with HTML entity to make comparison of 0.7 and 0.8 (HTML) output easier",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -389,7 +435,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: add epoch value for date/time data for later localization",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -406,7 +453,8 @@
       "installable": false,
       "upstream_date": "2022-02-21",
       "upstream_subject": "bootmanager: colorized debug output and ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -423,7 +471,8 @@
       "installable": false,
       "upstream_date": "2022-02-21",
       "upstream_subject": "bootmanager: remove remaining debug output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -440,7 +489,8 @@
       "installable": false,
       "upstream_date": "2022-02-21",
       "upstream_subject": "bootmanager: add urlader configuration handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -457,7 +507,8 @@
       "installable": false,
       "upstream_date": "2022-02-25",
       "upstream_subject": "bootmanager: save some changes, work in progress",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -474,7 +525,8 @@
       "installable": false,
       "upstream_date": "2022-02-25",
       "upstream_subject": "Merge remote-tracking branch 'origin/bootmanager_0.8' into bootmanager_0.8",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -491,7 +543,8 @@
       "installable": false,
       "upstream_date": "2022-02-25",
       "upstream_subject": "bootmanager: revert some accidental changes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -508,7 +561,8 @@
       "installable": false,
       "upstream_date": "2022-02-26",
       "upstream_subject": "bootmanager: add branding handling for enhanced variants",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -525,7 +579,8 @@
       "installable": false,
       "upstream_date": "2022-02-27",
       "upstream_subject": "bootmanager: better handling of unmodified system in a slot",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -542,7 +597,8 @@
       "installable": false,
       "upstream_date": "2022-02-27",
       "upstream_subject": "bootmanager: repair refactoring problems for Puma6/7 platform",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -559,7 +615,8 @@
       "installable": false,
       "upstream_date": "2022-02-27",
       "upstream_subject": "bootmanager: fix some problems from refactoring",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -576,7 +633,8 @@
       "installable": false,
       "upstream_date": "2022-02-28",
       "upstream_subject": "bootmanager: get_emmc output is complete path, not only an index",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -593,7 +651,8 @@
       "installable": false,
       "upstream_date": "2022-02-28",
       "upstream_subject": "bootmanager: wrong function name corrected",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -610,7 +669,8 @@
       "installable": false,
       "upstream_date": "2022-02-28",
       "upstream_subject": "bootmanager: add first implementation for devices with FIT images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -627,7 +687,8 @@
       "installable": false,
       "upstream_date": "2022-03-01",
       "upstream_subject": "bootmanager: merge branch with new version 0.8.2 into main branch (#47)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -644,7 +705,8 @@
       "installable": false,
       "upstream_date": "2022-03-01",
       "upstream_subject": "bootmanager: disable EVA configuration check for IPQ4019-based devices",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -661,7 +723,8 @@
       "installable": false,
       "upstream_date": "2022-03-01",
       "upstream_subject": "bootmanager: final commit for version 0.8.2",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -678,7 +741,8 @@
       "installable": false,
       "upstream_date": "2022-03-02",
       "upstream_subject": "bootmanager: add debug output of EVA configuration",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -695,7 +759,8 @@
       "installable": false,
       "upstream_date": "2022-03-02",
       "upstream_subject": "bootmanager: add processing for LE-formatted EVA configuration",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -712,7 +777,8 @@
       "installable": false,
       "upstream_date": "2022-03-03",
       "upstream_subject": "bootmanager: special handling for Puma SoC (BE order in EVA config) and",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -729,7 +795,8 @@
       "installable": false,
       "upstream_date": "2022-03-04",
       "upstream_subject": "bootmanager: fix octal conversion",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -746,7 +813,8 @@
       "installable": false,
       "upstream_date": "2022-03-04",
       "upstream_subject": "Merge branch 'bootmanager_0.8.3'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -763,7 +831,8 @@
       "installable": false,
       "upstream_date": "2022-03-08",
       "upstream_subject": "bootmanager: clarify the results of even the simplest thinkable",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -780,7 +849,8 @@
       "installable": false,
       "upstream_date": "2022-03-11",
       "upstream_subject": "bootmanager: missed an older value name after last updates",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -797,7 +867,8 @@
       "installable": false,
       "upstream_date": "2022-03-11",
       "upstream_subject": "bootmanager: use BUILDNUMBER in version string, if SUBVERSION is empty",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -814,7 +885,8 @@
       "installable": false,
       "upstream_date": "2022-03-17",
       "upstream_subject": "bootmanager: quote $null occurrences and add code to find rootfs",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -831,7 +903,8 @@
       "installable": false,
       "upstream_date": "2022-03-17",
       "upstream_subject": "bootmanager: quote $null occurrences and add code to find rootfs",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -848,7 +921,8 @@
       "installable": false,
       "upstream_date": "2022-03-20",
       "upstream_subject": "bootmanager: add version and timestamp to output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -865,7 +939,8 @@
       "installable": false,
       "upstream_date": "2022-03-21",
       "upstream_subject": "bootmanager: add env-var for easier debugging of EVA and FIT functions",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -882,7 +957,8 @@
       "installable": false,
       "upstream_date": "2022-03-21",
       "upstream_subject": "bootmanager: add env-var for easier debugging of EVA and FIT functions",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -899,7 +975,8 @@
       "installable": false,
       "upstream_date": "2022-03-22",
       "upstream_subject": "bootmanager: add some debug code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -916,7 +993,8 @@
       "installable": false,
       "upstream_date": "2022-03-22",
       "upstream_subject": "bootmanager: add some debug code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -933,7 +1011,8 @@
       "installable": false,
       "upstream_date": "2022-03-23",
       "upstream_subject": "bootmanager: add timespan measurement and display for lookup of",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -950,7 +1029,8 @@
       "installable": false,
       "upstream_date": "2022-03-23",
       "upstream_subject": "bootmanager: add time measurements to long-lasting operations",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -967,7 +1047,8 @@
       "installable": false,
       "upstream_date": "2022-03-23",
       "upstream_subject": "bootmanager: add timespan measurement and display for lookup of",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -984,7 +1065,8 @@
       "installable": false,
       "upstream_date": "2022-03-23",
       "upstream_subject": "bootmanager: add time measurements to long-lasting operations",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1001,7 +1083,8 @@
       "installable": false,
       "upstream_date": "2022-03-24",
       "upstream_subject": "bootmanager: add code to handle ramdisk images, change altsys handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1018,7 +1101,8 @@
       "installable": false,
       "upstream_date": "2022-03-24",
       "upstream_subject": "bootmanager: implement logic for inactive slot on devices using FIT image format",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1035,7 +1119,8 @@
       "installable": false,
       "upstream_date": "2022-03-24",
       "upstream_subject": "bootmanager: implement logic for inactive slot on devices using FIT image format",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1052,7 +1137,8 @@
       "installable": false,
       "upstream_date": "2022-03-24",
       "upstream_subject": "bootmanager: add code to handle ramdisk images, change altsys handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1069,7 +1155,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: some fixes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1086,7 +1173,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: some fixes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1103,7 +1191,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: finish mounting of squashfs images inside of FIT images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1120,7 +1209,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: finish mounting of squashfs images inside of FIT images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1137,7 +1227,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: smarter comparisons of magic values, if the shell doesn't support 64-bit arithmetics",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1154,7 +1245,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: add CPIO handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1171,7 +1263,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: smarter comparisons of magic values, if the shell doesn't support 64-bit arithmetics",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1188,7 +1281,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "bootmanager: add CPIO handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1205,7 +1299,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: add some more info to debug output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1222,7 +1317,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1239,7 +1335,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: ramdisk unpack and squashfs mount tested",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1256,7 +1353,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: copy_optimized changed",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1273,7 +1371,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: fix LE handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1290,7 +1389,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1307,7 +1407,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: fix LE handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1324,7 +1425,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1341,7 +1443,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1358,7 +1461,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: fix output errors, if no FDT is available",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1375,7 +1479,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: fix output errors, if no FDT is available",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1392,7 +1497,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: add more debug code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1409,7 +1515,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: ramdisk unpack and squashfs mount tested",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1426,7 +1533,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: copy_optimized changed",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1443,7 +1551,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: add some more info to debug output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1460,7 +1569,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "bootmanager: add more debug code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1477,7 +1587,8 @@
       "installable": false,
       "upstream_date": "2022-03-28",
       "upstream_subject": "bootmanager: correct wrong name of renamed function",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1494,7 +1605,8 @@
       "installable": false,
       "upstream_date": "2022-03-28",
       "upstream_subject": "bootmanager: correct wrong name of renamed function",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1511,7 +1623,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1528,7 +1641,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1545,7 +1659,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1562,7 +1677,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: adopt FIT image code from 'fit_tools'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1579,7 +1695,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: adopt FIT image code from 'fit_tools'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1596,7 +1713,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update BCM693 EVA configuration source",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1613,7 +1731,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update BCM693 EVA configuration source",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1630,7 +1749,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1647,7 +1767,8 @@
       "installable": false,
       "upstream_date": "2022-03-30",
       "upstream_subject": "bootmanager: fix LE conversion",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1664,7 +1785,8 @@
       "installable": false,
       "upstream_date": "2022-03-30",
       "upstream_subject": "bootmanager: fix LE conversion",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1681,7 +1803,8 @@
       "installable": false,
       "upstream_date": "2022-03-31",
       "upstream_subject": "bootmanager: change mount/extract code for FIT images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1698,7 +1821,8 @@
       "installable": false,
       "upstream_date": "2022-03-31",
       "upstream_subject": "bootmanager: change mount/extract code for FIT images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1715,7 +1839,8 @@
       "installable": false,
       "upstream_date": "2022-04-01",
       "upstream_subject": "bootmanager: fix wrong variable name",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1732,7 +1857,8 @@
       "installable": false,
       "upstream_date": "2022-04-01",
       "upstream_subject": "bootmanager: add a missing path to 'disk' sources",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1749,7 +1875,8 @@
       "installable": false,
       "upstream_date": "2022-04-01",
       "upstream_subject": "bootmanager: fix wrong variable name",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1766,7 +1893,8 @@
       "installable": false,
       "upstream_date": "2022-04-01",
       "upstream_subject": "bootmanager: add a missing path to 'disk' sources",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1783,7 +1911,8 @@
       "installable": false,
       "upstream_date": "2022-04-05",
       "upstream_subject": "bootmanager: add caching of EVA configuration search, even if",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1800,7 +1929,8 @@
       "installable": false,
       "upstream_date": "2022-04-06",
       "upstream_subject": "bootmanager: fixes from tests on 5530",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1817,7 +1947,8 @@
       "installable": false,
       "upstream_date": "2022-04-06",
       "upstream_subject": "bootmanager: set alternative to missing, if extracted image does not exist (e.g. due to a missing nanddump utility)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1834,7 +1965,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: save error message and code in case of an error",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1851,7 +1983,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: append zeros to EVA dump, until size fits the requirements",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1868,7 +2001,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: don't show values from FDT as 'unknown', if structure is incomplete",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1885,7 +2019,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: special handling for IPQ5018 devices",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1902,7 +2037,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: wrong option to extend EVA image",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1919,7 +2055,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: identify places, where to change IPQ5018 handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1936,7 +2073,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: IPQ5018 has 'filesystem' partitions",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1953,7 +2091,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: fix function name",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1970,7 +2109,8 @@
       "installable": false,
       "upstream_date": "2022-04-10",
       "upstream_subject": "bootmanager: display inactive info only if system is installed",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -1987,7 +2127,8 @@
       "installable": false,
       "upstream_date": "2022-04-13",
       "upstream_subject": "bootmanager: install YourFritz key for download, if it's missing",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2004,7 +2145,8 @@
       "installable": false,
       "upstream_date": "2022-04-13",
       "upstream_subject": "bootmanager: add loop device detection and installation",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2021,7 +2163,8 @@
       "installable": false,
       "upstream_date": "2022-04-13",
       "upstream_subject": "bootmanager: refactor major device ID reading",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2038,7 +2181,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: add more logging for DEBUG options",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2055,7 +2199,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: log only existing files and with BM_DEBUG_LOOP",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2072,7 +2217,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: update timestamp",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2089,7 +2235,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: fix uninstallation of YourFritz key and AVM's key format with exponent",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2106,7 +2253,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: add some extra messages for BM_DEBUG_LOOP",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2123,7 +2271,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: no output of data for inactive system, if it couldn't be examined",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2140,7 +2289,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: correct last flaws, update timestamp, increment version number",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2157,7 +2307,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "bootmanager: add more logging to driver download",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2174,7 +2325,8 @@
       "installable": false,
       "upstream_date": "2022-04-16",
       "upstream_subject": "Merge branch 'bm-fit-support'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2191,7 +2343,8 @@
       "installable": false,
       "upstream_date": "2022-04-17",
       "upstream_subject": "rename references to 'master' to 'main' or use special tags for other references between repos",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2208,7 +2361,8 @@
       "installable": false,
       "upstream_date": "2022-06-28",
       "upstream_subject": "add active_modified_version",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2225,7 +2379,8 @@
       "installable": false,
       "upstream_date": "2023-01-11",
       "upstream_subject": "bootmanager: detect system type, before checking other properties",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2242,7 +2397,8 @@
       "installable": false,
       "upstream_date": "2023-01-12",
       "upstream_subject": "bootmanager: BusyBox' sed applet has changed behavior from version 1.35.0 to 1.36.0 ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2259,7 +2415,8 @@
       "installable": false,
       "upstream_date": "2023-01-12",
       "upstream_subject": "bootmanager: update timestamp to distinguish between older and current version(s)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2276,7 +2433,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: update timestamp again",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2293,7 +2451,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: changes after 'shellcheck' warnings",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2310,7 +2469,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: mark IPQ4019 as unsupported and update timestamp again",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2327,7 +2487,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: simplify code a bit",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2344,7 +2505,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: remove (out-commented) code from last tests with IPQ4019 models",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager",
@@ -2361,7 +2523,8 @@
       "installable": false,
       "upstream_date": "2023-01-14",
       "upstream_subject": "bootmanager: update timespan in (c) message",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2378,7 +2541,8 @@
       "installable": false,
       "upstream_date": "2022-02-15",
       "upstream_subject": "bootmanager: first version (copied from prev. version) of HTML generator",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2395,7 +2559,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "Revert \"bootmanager: remove test data from HTML snippet generator\"",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2412,7 +2577,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: output localized date/time values from HTML generator",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2429,7 +2595,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: remove test data from HTML snippet generator",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2446,7 +2613,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: add HTML snippet generator (with test data)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2463,7 +2631,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: fix wrong localization id",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2480,7 +2649,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: remove test data from HTML snippet generator",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2497,7 +2667,8 @@
       "installable": false,
       "upstream_date": "2022-02-18",
       "upstream_subject": "bootmanager: silence some shellcheck warnings regarding some variables read from cached data file",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2514,7 +2685,8 @@
       "installable": false,
       "upstream_date": "2022-03-01",
       "upstream_subject": "bootmanager: merge branch with new version 0.8.2 into main branch (#47)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-bootmanager-html",
@@ -2531,7 +2703,8 @@
       "installable": false,
       "upstream_date": "2022-03-11",
       "upstream_subject": "bootmanager: rename variable 'current_branding' to 'active_branding'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2548,7 +2721,8 @@
       "installable": false,
       "upstream_date": "2018-05-03",
       "upstream_subject": "FTPtoEVA.ps1: Inline type definition running on PS Core 6",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2565,7 +2739,8 @@
       "installable": false,
       "upstream_date": "2018-05-04",
       "upstream_subject": "FTPtoEVA.ps1: PS 5.1 cannot understand short property accessor syntax",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2582,7 +2757,8 @@
       "installable": false,
       "upstream_date": "2018-05-21",
       "upstream_subject": "EVA: save incomplete files, this branch is WIP",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2599,7 +2775,8 @@
       "installable": false,
       "upstream_date": "2018-05-24",
       "upstream_subject": "intermediate version, compiles with PS 5.1",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2616,7 +2793,8 @@
       "installable": false,
       "upstream_date": "2018-05-29",
       "upstream_subject": "Intermediate version - to be checked on PS6/Linux",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-eva-ftptoeva",
@@ -2633,7 +2811,8 @@
       "installable": false,
       "upstream_date": "2018-06-13",
       "upstream_subject": "Merge EVA (squashed) (#9)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2650,7 +2829,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit-findfs.sh: add header and usage screen",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2667,7 +2847,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit_tools: useless assignment removed",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2684,7 +2865,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit_tools: silence some shellcheck comments",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2701,7 +2883,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit-tools: put FIT-image related tools into a separate folder",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2718,7 +2901,8 @@
       "installable": false,
       "upstream_date": "2022-03-16",
       "upstream_subject": "fit_tools: remove unused variables",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2735,7 +2919,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fit-findfs.sh: use code from 'fitdump.sh', optimize output format",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2752,7 +2937,8 @@
       "installable": false,
       "upstream_date": "2022-03-21",
       "upstream_subject": "fit_tools: add a verification of data sizes from input image",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2769,7 +2955,8 @@
       "installable": false,
       "upstream_date": "2022-03-26",
       "upstream_subject": "fit-findfs.sh: some older BusyBox binaries don't support 64 bit precision in arithmetic expressions",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2786,7 +2973,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "fit_tools: adjust code a bit, if there's no 64-bit arithmetics in the used shell",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2803,7 +2991,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "fit-findfs.sh: AVM's FIT format starts with LE data - regardless of native byte order on the used platform",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2820,7 +3009,8 @@
       "installable": false,
       "upstream_date": "2022-03-28",
       "upstream_subject": "fit_tools: add input file check to all scripts",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2837,7 +3027,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fit-findfs.sh: use common code to copy from flash",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2854,7 +3045,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fit-findfs.sh: speed up last block truncation",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2871,7 +3063,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fit-findfs.sh: last block is too large",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2888,7 +3081,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fit-findfs.sh: copy from flash with common code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2905,7 +3099,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fit-findfs.sh: change copy from flash code",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fit-findfs",
@@ -2922,7 +3117,8 @@
       "installable": false,
       "upstream_date": "2022-04-01",
       "upstream_subject": "fit-findfs.sh: wrong diacrit. char",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -2939,7 +3135,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fitdump.sh: finalize script, add header and usage screen",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -2956,7 +3153,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit_tools: useless assignment removed",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -2973,7 +3171,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit_tools: silence some shellcheck comments",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -2990,7 +3189,8 @@
       "installable": false,
       "upstream_date": "2022-03-14",
       "upstream_subject": "fit-tools: put FIT-image related tools into a separate folder",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3007,7 +3207,8 @@
       "installable": false,
       "upstream_date": "2022-03-16",
       "upstream_subject": "fit_tools: remove unused variables",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3024,7 +3225,8 @@
       "installable": false,
       "upstream_date": "2022-03-17",
       "upstream_subject": "fitdump.sh: make data loop recursive in preparation to add output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3041,7 +3243,8 @@
       "installable": false,
       "upstream_date": "2022-03-17",
       "upstream_subject": "fitdump.sh: add an option to create a filesystem structure from",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3058,7 +3261,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: add offset as comment to /incbin/ statements",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3075,7 +3279,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: add a more sophisticated lookup for the main kernel image ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3092,7 +3297,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: add an option to process input data without AVM's header",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3109,7 +3315,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "Revert \"fitdump.sh: add a symlink to 'kernel.image', too, which ...\"",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3126,7 +3333,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: add handling of 'ramdisk' images (biggest image wins) and ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3143,7 +3351,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: add a symlink to 'kernel.image', too, which ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3160,7 +3369,8 @@
       "installable": false,
       "upstream_date": "2022-03-18",
       "upstream_subject": "fitdump.sh: create a symlink to 'filesystem.image' while",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3177,7 +3387,8 @@
       "installable": false,
       "upstream_date": "2022-03-21",
       "upstream_subject": "fitdump.sh: don't measure/display times, if no high resolution time source is available",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3194,7 +3405,8 @@
       "installable": false,
       "upstream_date": "2022-03-21",
       "upstream_subject": "fit_tools: add a verification of data sizes from input image",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3211,7 +3423,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "fitdump.sh: BusyBox applet  needs an existing file",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3228,7 +3441,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "fitdump.sh: fix handling of numbers in case of lack of 64-bit arithmetics",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3245,7 +3459,8 @@
       "installable": false,
       "upstream_date": "2022-03-27",
       "upstream_subject": "fitdump.sh: AVM's FIT format starts with LE data - regardless of native byte order on the used platform",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3262,7 +3477,8 @@
       "installable": false,
       "upstream_date": "2022-03-28",
       "upstream_subject": "fitdump.sh: copy 8 more bytes, found in AVM's own images",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3279,7 +3495,8 @@
       "installable": false,
       "upstream_date": "2022-03-28",
       "upstream_subject": "fit_tools: add input file check to all scripts",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3296,7 +3513,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: restore BLOB output",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3313,7 +3531,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: change data extraction from block devices",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3330,7 +3549,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: copy from flash with blocks of nand page-size",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3347,7 +3567,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: speed up last block truncation",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3364,7 +3585,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: remove ls remaining after debug",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3381,7 +3603,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: constant vs. variable",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3398,7 +3621,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: some changes for further debugging",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3415,7 +3639,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: add some statements to output further debug info",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3432,7 +3657,8 @@
       "installable": false,
       "upstream_date": "2022-03-29",
       "upstream_subject": "fitdump.sh: last block is too large",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3449,7 +3675,8 @@
       "installable": false,
       "upstream_date": "2022-04-15",
       "upstream_subject": "fitdump.sh: correct a flaw, where a hexadecimal four-bytes value ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3466,7 +3693,8 @@
       "installable": false,
       "upstream_date": "2022-06-17",
       "upstream_subject": "fit-tools: create symlink 'frontend' pointing to node directory of frontend filesystem image (in 'filesystem' mode only)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3483,7 +3711,8 @@
       "installable": false,
       "upstream_date": "2022-06-19",
       "upstream_subject": "fitdump.sh: change detection of frontend filesystem to adopt it to",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-fitdump",
@@ -3500,7 +3729,8 @@
       "installable": false,
       "upstream_date": "2022-06-23",
       "upstream_subject": "fitdump.sh: image numbers above 8 will be read as octal values, if prefixed by 0s,",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3517,7 +3747,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: add more YF_UI functions and use them to localize",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3534,7 +3765,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: redacted usage screen for 'yf_check_signature'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3551,7 +3783,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: new signature check script 'yf_check_signature'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3568,7 +3801,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: ignore HWRevision differences during signature verification",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3585,7 +3819,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: replace external 'tar' with 'dd' and 'cmp'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3602,7 +3837,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: remove forgotten ruler-helper",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3619,7 +3855,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: add modulus from environment variable as an option",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3636,7 +3873,8 @@
       "installable": false,
       "upstream_date": "2021-12-05",
       "upstream_subject": "signimage: name functions from framework more unique",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3653,7 +3891,8 @@
       "installable": false,
       "upstream_date": "2021-12-05",
       "upstream_subject": "signimage: add german localization to yf_check_signature",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3670,7 +3909,8 @@
       "installable": false,
       "upstream_date": "2021-12-06",
       "upstream_subject": "signimage: unify messages for OpenSSL command support checks",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3687,7 +3927,8 @@
       "installable": false,
       "upstream_date": "2021-12-06",
       "upstream_subject": "signimage: unify openssl handling",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3704,7 +3945,8 @@
       "installable": false,
       "upstream_date": "2021-12-07",
       "upstream_subject": "sign_image: some corrections to yf_check_signature",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3721,7 +3963,8 @@
       "installable": false,
       "upstream_date": "2021-12-07",
       "upstream_subject": "signimage: use more framework functions from yf_check_signature",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3738,7 +3981,8 @@
       "installable": false,
       "upstream_date": "2021-12-08",
       "upstream_subject": "signimage: some more changes to yf_check_signature",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3755,7 +3999,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: unset variables, if not used any longer",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3772,7 +4017,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: yf_sign and yf_check_signature with some ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3789,7 +4035,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: repair a glitch from output to terminal",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-check-signature",
@@ -3806,7 +4053,8 @@
       "installable": false,
       "upstream_date": "2022-04-22",
       "upstream_subject": "signimage: misspelled continuation :-)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3823,7 +4071,8 @@
       "installable": false,
       "upstream_date": "2021-11-29",
       "upstream_subject": "signimage: rename various scripts to get shorter/simpler names",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3840,7 +4089,8 @@
       "installable": false,
       "upstream_date": "2021-11-30",
       "upstream_subject": "signimage: some additional enhancements",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3857,7 +4107,8 @@
       "installable": false,
       "upstream_date": "2021-11-30",
       "upstream_subject": "signimage: allow signing of image files 'in-place'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3874,7 +4125,8 @@
       "installable": false,
       "upstream_date": "2021-12-02",
       "upstream_subject": "signimage: some further changes to 'yf_sign'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3891,7 +4143,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: make yf_sign and yf_check_signature equal looking",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3908,7 +4161,8 @@
       "installable": false,
       "upstream_date": "2021-12-03",
       "upstream_subject": "signimage: update usage screen of 'yf_sign'",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3925,7 +4179,8 @@
       "installable": false,
       "upstream_date": "2021-12-05",
       "upstream_subject": "signimage: add framework functions to yf_sign",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3942,7 +4197,8 @@
       "installable": false,
       "upstream_date": "2021-12-07",
       "upstream_subject": "signimage: improved version of yf_sign",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3959,7 +4215,8 @@
       "installable": false,
       "upstream_date": "2021-12-07",
       "upstream_subject": "signimage: some final changes to yf_sign",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3976,7 +4233,8 @@
       "installable": false,
       "upstream_date": "2021-12-08",
       "upstream_subject": "signimage: final version of yf_sign",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -3993,7 +4251,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: unset variables, if not used any longer",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -4010,7 +4269,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: yf_sign and yf_check_signature with some ...",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -4027,7 +4287,8 @@
       "installable": false,
       "upstream_date": "2021-12-09",
       "upstream_subject": "signimage: repair a glitch from output to terminal",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -4044,7 +4305,8 @@
       "installable": false,
       "upstream_date": "2021-12-10",
       "upstream_subject": "signimage: unify function names in yf_sign",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -4061,7 +4323,8 @@
       "installable": false,
       "upstream_date": "2022-04-13",
       "upstream_subject": "yf_sign: fix sentence",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-signimage-yf-sign",
@@ -4078,7 +4341,8 @@
       "installable": false,
       "upstream_date": "2022-04-22",
       "upstream_subject": "signimage: misspelled continuation :-)",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4095,7 +4359,8 @@
       "installable": false,
       "upstream_date": "2016-02-10",
       "upstream_subject": "no functional changes",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4112,7 +4377,8 @@
       "installable": false,
       "upstream_date": "2016-02-10",
       "upstream_subject": "added CUSTOM environment variable to startup script",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4129,7 +4395,8 @@
       "installable": false,
       "upstream_date": "2016-02-10",
       "upstream_subject": "initial release",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4146,7 +4413,8 @@
       "installable": false,
       "upstream_date": "2016-02-14",
       "upstream_subject": "add script to copy SquashFS image to the inactive filesystem partition",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4163,7 +4431,8 @@
       "installable": false,
       "upstream_date": "2016-05-01",
       "upstream_subject": "changed formatting to use tabs instead of blanks",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     },
     {
       "name": "yourfritz-update-yaffs2",
@@ -4180,7 +4449,8 @@
       "installable": false,
       "upstream_date": "2019-06-18",
       "upstream_subject": "update_yaffs2: add SPDX identifiers",
-      "license": "GPL-2.0-or-later"
+      "license": "GPL-2.0-or-later",
+      "devices": []
     }
   ]
 }

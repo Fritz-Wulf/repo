@@ -54,6 +54,7 @@ def entry_for_release(release, version, asset, digest, commit):
         "source_ref": f"Fritz-Wulf/fw@v{version}",
         "source_commit": commit,
         "compatibility": "cross-generation-client-foundation",
+        "devices": ["3270", "7490", "7530", "7590"],
         "installable": False,
         "release_date": release.get("published_at"),
         "channel": "testing" if release.get("prerelease") else "stable",
