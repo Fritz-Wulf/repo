@@ -1,5 +1,5 @@
 {
-  "verification": "VERIFIED",
+  "verification": "HISTORICAL VERIFIED",
   "model": "FRITZ!Box 7490",
   "hardware_revision": null,
   "architecture": "mips32",
@@ -14,10 +14,11 @@
   ],
   "package_architecture": "mips32-big-endian-uclibc",
   "runtime_prefix": "/usb/fritzwulf",
-  "flash_support": "profile-specific only",
-  "recovery_notes": "Verify physical device and AVM recovery path before flashing.",
+  "flash_support": "historical verified 07.62 reference only; no automatic flash",
+  "recovery_notes": "Verify the physical FRITZ!Box 7490, FRITZ!OS version, backup and AVM recovery path before any flash operation.",
   "known_issues": [
-    "AVM libexif UTF-16LE to UTF-8 conversion requires Fritz.Wulf compatibility patch for validated 07.62 library."
+    "AVM libexif UTF-16LE to UTF-8 conversion requires the Fritz.Wulf compatibility patch for the validated 07.62 library.",
+    "Compatibility claims outside the historical 07.62 reference require separate validation."
   ],
   "reference_image": {
     "filename": "7490_07.62.all_freetz-ng-29656-6e6c5d9c7d-ng26020_20260824-175155.image",
