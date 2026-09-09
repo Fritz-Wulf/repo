@@ -8,8 +8,17 @@ The historical Fritz.Wulf patcher and converter source are preserved verbatim un
 
 The patcher accepts only the known original full-file and slot hashes, detects the known patched state, rejects unknown/tampered binaries, compiles the replacement with the MIPS/uClibc target toolchain, rejects `.text` relocations, and atomically preserves file mode during replacement.
 
+## Freetz build integration
+
+`stage_into_freetz.py` is plan-only by default. It requires `FREETZ_TYPE_7490=y`, `FREETZ_INFO_BOXTYPE=7490` and `FREETZ_INFO_FIRMWAREVERSION=07.62` before it will stage anything. `--apply` copies only the four public source/metadata files to `custom/wulf7490/` and inserts one idempotent `FRITZWULF_7490_DLNA_UTF16` call into `fwmod_custom`.
+
+```sh
+python3 tools/7490/dlna/stage_into_freetz.py --freetz-root /path/to/freetz-ng
+python3 tools/7490/dlna/stage_into_freetz.py --freetz-root /path/to/freetz-ng --apply
+```
+
+During a Freetz build, the staged `freetz_hook.py` checks the exact target hash before delegating to the historical patcher. Unknown firmware/library combinations fail closed. A patched target is detected idempotently. No router is contacted or flashed by these tools.
+
 ## Encoding behavior
 
-The converter reads UTF-16LE on the big-endian MIPS target, emits UTF-8 for BMP code points and valid surrogate pairs, maps isolated surrogates to U+FFFD, respects the output boundary, and always NUL-terminates when `outlen` is non-zero. Regression coverage must include ASCII, umlauts, ß, accents, non-Latin text, emoji, valid surrogate pairs, isolated surrogates, and boundary behavior.
-
-The next hardware/build integration step is to compile this source with the pinned 7490 toolchain and exercise it against the known original AVM library inside a controlled firmware build; no production box is modified by repository tests.
+The converter reads UTF-16LE on the big-endian MIPS target, emits UTF-8 for BMP code points and valid surrogate pairs, maps isolated surrogates to U+FFFD, respects the output boundary, and always NUL-terminates when `outlen` is non-zero. CI exercises ASCII, umlauts, ß, accents, non-Latin text, emoji, valid surrogate pairs, isolated surrogates and boundary behavior.

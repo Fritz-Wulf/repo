@@ -12,5 +12,14 @@
   "patcher_sha256": "40c16ca2ed909c084c49bb5ba07f3738b7df72e2abd15d733eac07fecf97ad17",
   "converter_source_sha256": "fadf5093a8027968f3b1631b4a0ef0245045c9297943ada550bc6f23a80b2082",
   "toolchain": ["mips-linux-uclibc-gcc", "mips-linux-uclibc-objcopy", "mips-linux-uclibc-readelf"],
-  "redistributes_vendor_binary": false
+  "redistributes_vendor_binary": false,
+  "integration": {
+    "stager": "stage_into_freetz.py",
+    "hook": "freetz_hook.py",
+    "hook_marker": "FRITZWULF_7490_DLNA_UTF16",
+    "required_profile": "FREETZ_TYPE_7490=y",
+    "required_fritzos": "07.62",
+    "default_stager_mode": "plan-only",
+    "apply_flag": "--apply"
+  }
 }

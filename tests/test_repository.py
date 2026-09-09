@@ -41,6 +41,38 @@ class RepositoryTest(unittest.TestCase):
             out = ctypes.create_string_buffer(4); raw = "😀".encode("utf-16le") + b"\0\0"
             fn(out, ctypes.create_string_buffer(raw), len(out)); self.assertEqual(out.value, b"")
 
+    def test_7490_stager_is_idempotent_and_vendor_free(self):
+        stager = ROOT / "tools/7490/dlna/stage_into_freetz.py"
+        with tempfile.TemporaryDirectory() as td:
+            tree = Path(td); (tree / ".config").write_text("FREETZ_TYPE_7490=y\n")
+            info = tree / "build/modified/filesystem/etc/freetz_info.cfg"; info.parent.mkdir(parents=True)
+            info.write_text("export FREETZ_INFO_BOXTYPE='7490'\nexport FREETZ_INFO_FIRMWAREVERSION='07.62'\n")
+            (tree / "fwmod_custom").write_text("#!/usr/bin/env bash\nall() {\n    :\n}\n")
+            for _ in range(2):
+                proc = subprocess.run([sys.executable, str(stager), "--freetz-root", str(tree), "--apply"], text=True, capture_output=True)
+                self.assertEqual(proc.returncode, 0, proc.stderr)
+            hook = (tree / "fwmod_custom").read_text(); self.assertEqual(hook.count("FRITZWULF_7490_DLNA_UTF16"), 1)
+            staged = tree / "custom/wulf7490"
+            for name in ["freetz_hook.py", "patch_avm_libexif_utf16.py", "wulf_utf16_to_utf8.c", "metadata.json"]:
+                self.assertTrue((staged / name).is_file())
+            self.assertFalse(any(p.name == "libexif.so.12.3.4" for p in staged.rglob("*")))
+
+    def test_7490_freetz_hook_fails_closed_on_profile_and_target(self):
+        hook = ROOT / "tools/7490/dlna/freetz_hook.py"
+        with tempfile.TemporaryDirectory() as td:
+            tree = Path(td)
+            info = tree / "build/modified/filesystem/etc/freetz_info.cfg"
+            target = tree / "build/modified/filesystem/lib/libexif.so.12.3.4"
+            info.parent.mkdir(parents=True); target.parent.mkdir(parents=True)
+            info.write_text("export FREETZ_INFO_BOXTYPE='7490'\nexport FREETZ_INFO_FIRMWAREVERSION='07.62'\n")
+            target.write_bytes(b"not-a-known-avm-library")
+            (tree / ".config").write_text("# CONFIG_FREETZ_TYPE_7490 is not set\n")
+            bad_profile = subprocess.run([sys.executable, str(hook), "--freetz-root", str(tree), "--check-only"], text=True, capture_output=True)
+            self.assertEqual(bad_profile.returncode, 1); self.assertIn("FREETZ_TYPE_7490=y", bad_profile.stderr)
+            (tree / ".config").write_text("FREETZ_TYPE_7490=y\n")
+            unknown = subprocess.run([sys.executable, str(hook), "--freetz-root", str(tree), "--check-only"], text=True, capture_output=True)
+            self.assertEqual(unknown.returncode, 1); self.assertIn("unknown or tampered", unknown.stderr)
+
     def test_7490_dlna_patch_sources_are_reconstructed(self):
         meta = json.loads((ROOT / "tools/7490/dlna/metadata.json").read_text())
         self.assertEqual(meta["verification"], "HISTORICAL VERIFIED")
@@ -62,6 +94,12 @@ class RepositoryTest(unittest.TestCase):
         self.assertEqual(hist["freetz_version"], "freetz-ng-766MF-acc1f895ff")
         self.assertFalse(hist["flash_boot_verified"])
         self.assertRegex(hist["busybox_sha256"], r"^[0-9a-f]{64}$")
+
+    def test_7490_profile_is_historical_not_unbounded_verified(self):
+        profile = json.loads((ROOT / "devices/7490/device.json").read_text())
+        self.assertEqual(profile["verification"], "HISTORICAL VERIFIED")
+        self.assertEqual(profile["fritzos_versions"], ["07.62"])
+        self.assertIn("historical", profile["flash_support"].lower())
 
     def test_generation_profiles_are_evidence_backed(self):
         expected = {
