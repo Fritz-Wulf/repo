@@ -1,0 +1,53 @@
+name: sync-fw-releases
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-fw-releases
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Sync fw releases
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync_fw_releases.py
+      - run: python3 scripts/build_repository.py
+      - run: python3 scripts/validate_repository.py
+      - run: python3 -m unittest -q tests.test_repository
+      - run: python3 -m unittest -q tests.test_sync_fw_releases
+      - run: node --test tests/catalog-core.test.mjs
+      - name: Create pull request when releases changed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet && [ -z "$(git status --porcelain)" ]; then
+            echo "No new fw release"
+            exit 0
+          fi
+          branch="automation/sync-fw-releases-${GITHUB_RUN_ID}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add metadata/packages/fw.json packages/fritzwulf/fw Packages Packages.gz SHA256SUMS index.json
+          git commit -m "chore: sync fw releases"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "chore: sync fw releases" \
+            --body "Automated fail-closed sync from public Fritz-Wulf/fw releases. CI must pass before merge."

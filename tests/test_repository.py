@@ -92,5 +92,17 @@ class RepositoryTest(unittest.TestCase):
         self.assertIn('prefers-reduced-motion', css)
         self.assertIn('focus-visible', css)
 
+    def test_fw_release_sync_workflow_is_pr_gated(self):
+        workflow = (ROOT / ".github/workflows/sync-fw-releases.yml").read_text(encoding="utf-8")
+        self.assertIn("schedule:", workflow)
+        self.assertIn("workflow_dispatch:", workflow)
+        self.assertIn("contents: write", workflow)
+        self.assertIn("pull-requests: write", workflow)
+        self.assertIn("scripts/sync_fw_releases.py", workflow)
+        self.assertIn("scripts/build_repository.py", workflow)
+        self.assertIn("scripts/validate_repository.py", workflow)
+        self.assertIn("gh pr create", workflow)
+        self.assertNotIn("git push origin main", workflow)
+
 if __name__ == "__main__":
     unittest.main()
