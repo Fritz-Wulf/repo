@@ -46,6 +46,18 @@ X-Fritz-Wulf-Platform: fritzwulf-package-manager
 X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
 X-Fritz-Wulf-Installable: no
 
+Package: fw
+Version: 0.3.0
+Architecture: all
+Description: Fritz.Wulf package manager repository metadata integrity release
+Filename: packages/fritzwulf/fw/0.3.0/fw-0.3.0.tar.gz
+Size: 6388
+SHA256sum: a7ac7487aa865afea3810a25b5b082c86c2f828d02b533c00673ed4c09066cbd
+Source: Fritz-Wulf/fw@v0.3.0
+X-Fritz-Wulf-Platform: fritzwulf-package-manager
+X-Fritz-Wulf-Compatibility: cross-generation-client-foundation
+X-Fritz-Wulf-Installable: no
+
 Package: yourfritz-bootmanager
 Version: git-20151230-ec70c1718fe5
 Architecture: all
