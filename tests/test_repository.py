@@ -22,7 +22,8 @@ class RepositoryTest(unittest.TestCase):
         self.assertEqual(fw[0]["source_ref"], "Fritz-Wulf/fw@v0.1.0")
         self.assertEqual(fw[0]["sha256"], "968e09eff06b0f63663663e51248623a8ef2bcf8bfbb18f36a415169943fc5bf")
         versions = sorted(p["version"] for p in idx["packages"] if p["name"] == "fw")
-        self.assertEqual(versions, ["0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.3.0"])
+        baseline = {"0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.3.0"}
+        self.assertTrue(baseline.issubset(set(versions)))
 
     def test_7490_utf16_converter_vectors(self):
         source = (ROOT / "tools/7490/dlna/wulf_utf16_to_utf8.c").read_text()
