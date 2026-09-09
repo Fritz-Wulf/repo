@@ -16,6 +16,15 @@ for model in idx.get("devices", []):
         d = json.loads(p.read_text(encoding="utf-8"))
         if d.get("verification") not in {"VERIFIED", "HISTORICAL VERIFIED", "INFERRED", "UNKNOWN"}:
             errors.append(f"invalid verification: {model}")
+        if d.get("verification") == "INFERRED":
+            evidence = d.get("evidence", [])
+            if not evidence:
+                errors.append(f"inferred profile missing evidence: {model}")
+            for item in evidence:
+                if not str(item.get("url", "")).startswith("https://"):
+                    errors.append(f"invalid evidence URL: {model}")
+                if item.get("verification") not in {"VERIFIED", "INFERRED"}:
+                    errors.append(f"invalid evidence verification: {model}")
 
 seen = set()
 for pkg in idx.get("packages", []):

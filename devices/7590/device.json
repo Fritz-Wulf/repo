@@ -1,16 +1,45 @@
 {
-  "verification": "UNKNOWN",
+  "verification": "INFERRED",
   "model": "FRITZ!Box 7590",
-  "hardware_revision": null,
-  "architecture": null,
-  "endianness": null,
-  "kernel": null,
-  "libc": null,
-  "fritzos_versions": [],
-  "freetz_versions": [],
-  "package_architecture": null,
+  "hardware_revision": "226",
+  "profile_scope": "FRITZ!Box 7590 (non-AX); 7590 AX requires a separate profile",
+  "architecture": "mips32",
+  "endianness": "big",
+  "soc_family": "GRX5",
+  "kernel": "4.9.x; 4.9.337 at the Freetz 08.20 configuration reference",
+  "libc": "Freetz uClibc-ng under /usr/lib/freetz; AVM libc is firmware-dependent on newer FRITZ!OS",
+  "fritzos_versions": ["07.29", "07.59", "08.03", "08.25"],
+  "freetz_versions": ["Freetz-NG master firmware profile"],
+  "package_architecture": "mips32-grx5-be",
   "runtime_prefix": "/usb/fritzwulf",
-  "flash_support": "UNKNOWN",
-  "recovery_notes": "Compatibility profile pending verification.",
-  "known_issues": []
+  "flash_support": "PROFILE-ONLY; no Fritz.Wulf hardware flash validation",
+  "recovery_notes": "Verify HWRevision 226, FRITZ!OS, kernel and runtime ABI before device-specific installation or recovery; never substitute 7590 AX artifacts.",
+  "known_issues": [
+    "Freetz-NG documents incorrect or stale AVM kernel configurations in some 7590 7.55/7.56 source bundles.",
+    "Replace-kernel support is constrained on GRX5/current kernel formats; do not treat module or package support as firmware-flash support.",
+    "AVM libc may differ from the separate uClibc-ng runtime used by Freetz; package linking must target the intended runtime explicitly.",
+    "The 08.25 firmware is listed by Freetz-NG, but this profile does not assert an 08.25 kernel version without firmware-specific extraction."
+  ],
+  "evidence": [
+    {
+      "label": "Freetz-NG firmware matrix including 7590 08.25",
+      "url": "https://freetz-ng.github.io/freetz-ng/FIRMWARES/",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "Freetz-NG 7590 08.20 kernel config: Linux/mips 4.9.337, GRX5, big-endian",
+      "url": "https://github.com/Freetz-NG/freetz-ng/blob/master/make/kernel/configs/freetz/config-grx5-7590_08.20",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "Freetz-NG JUIS matrix: HWR 226 for FRITZ!Box 7590",
+      "url": "https://freetz-ng.github.io/freetz-ng/juis/",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "Freetz-NG NEWS: 7590 source/config caveats and separate libc model",
+      "url": "https://freetz-ng.github.io/freetz-ng/NEWS/",
+      "verification": "VERIFIED"
+    }
+  ]
 }

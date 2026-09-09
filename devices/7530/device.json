@@ -1,16 +1,45 @@
 {
-  "verification": "UNKNOWN",
+  "verification": "INFERRED",
   "model": "FRITZ!Box 7530",
-  "hardware_revision": null,
-  "architecture": null,
-  "endianness": null,
-  "kernel": null,
-  "libc": null,
-  "fritzos_versions": [],
-  "freetz_versions": [],
-  "package_architecture": null,
+  "hardware_revision": "236",
+  "profile_scope": "FRITZ!Box 7530 (non-AX); AX variants require separate profiles",
+  "architecture": "armv7",
+  "endianness": "little",
+  "soc_family": "IPQ40xx",
+  "soc": "Qualcomm IPQ4019",
+  "kernel": "4.4.271 (Freetz 07.50-08.20 configuration reference; verify per firmware)",
+  "libc": "Freetz uClibc-ng under /usr/lib/freetz; AVM libc is firmware-dependent on newer FRITZ!OS",
+  "fritzos_versions": ["07.29", "07.59", "08.02", "08.21", "08.25"],
+  "freetz_versions": ["Freetz-NG master firmware profile"],
+  "package_architecture": "armv7-ipq40xx",
   "runtime_prefix": "/usb/fritzwulf",
-  "flash_support": "UNKNOWN",
-  "recovery_notes": "Compatibility profile pending verification.",
-  "known_issues": []
+  "flash_support": "PROFILE-ONLY; no Fritz.Wulf hardware flash validation",
+  "recovery_notes": "Do not use 7530 AX artifacts. Verify HWRevision 236, FRITZ!OS, kernel and runtime ABI before device-specific installation or recovery.",
+  "known_issues": [
+    "AVM source bundles and kernel configurations have had firmware-specific inconsistencies; do not infer ABI solely from an OSP archive.",
+    "AVM libc may differ from the separate uClibc-ng runtime used by Freetz; package linking must target the intended runtime explicitly.",
+    "The 08.25 firmware is listed by Freetz-NG, but this profile does not assert an 08.25 kernel version without firmware-specific extraction."
+  ],
+  "evidence": [
+    {
+      "label": "Freetz-NG firmware matrix including 7530 08.25",
+      "url": "https://freetz-ng.github.io/freetz-ng/FIRMWARES/",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "Freetz-NG 7530 08.20 kernel config: Linux/arm 4.4.271, IPQ40xx, little-endian ARM",
+      "url": "https://github.com/Freetz-NG/freetz-ng/blob/master/make/kernel/configs/freetz/config-ipq40xx-7530_08.20",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "OpenWrt device tree identifying IPQ4019 FRITZ!Box 7530",
+      "url": "https://git.openwrt.org/openwrt/openwrt/tree/target/linux/ipq40xx/dts/qcom-ipq4019-fritzbox-7530.dts",
+      "verification": "VERIFIED"
+    },
+    {
+      "label": "Freetz-NG JUIS matrix: HWR 236 for FRITZ!Box 7530",
+      "url": "https://freetz-ng.github.io/freetz-ng/juis/",
+      "verification": "VERIFIED"
+    }
+  ]
 }

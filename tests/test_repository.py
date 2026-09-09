@@ -24,6 +24,24 @@ class RepositoryTest(unittest.TestCase):
         versions = sorted(p["version"] for p in idx["packages"] if p["name"] == "fw")
         self.assertEqual(versions, ["0.1.0", "0.1.1", "0.2.0", "0.2.1", "0.3.0"])
 
+    def test_generation_profiles_are_evidence_backed(self):
+        expected = {
+            "3270": ("mips32", "little", "ur8"),
+            "7530": ("armv7", "little", "ipq40xx"),
+            "7590": ("mips32", "big", "grx5"),
+        }
+        for model, (arch, endian, soc) in expected.items():
+            profile = json.loads((ROOT / "devices" / model / "device.json").read_text())
+            self.assertEqual(profile["verification"], "INFERRED")
+            self.assertEqual(profile["architecture"], arch)
+            self.assertEqual(profile["endianness"], endian)
+            self.assertEqual(profile["soc_family"].lower(), soc)
+            self.assertTrue(profile["package_architecture"])
+            self.assertGreaterEqual(len(profile["evidence"]), 2)
+            for item in profile["evidence"]:
+                self.assertTrue(item["url"].startswith("https://"))
+                self.assertIn(item["verification"], {"VERIFIED", "INFERRED"})
+
     def test_neonwulf_catalog_contract(self):
         html = (ROOT / "index.html").read_text(encoding="utf-8")
         css = (ROOT / "assets/css/neonwulf.css").read_text(encoding="utf-8")
