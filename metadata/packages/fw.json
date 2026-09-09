@@ -34,5 +34,23 @@
     "release_date": "2026-09-08T23:28:31Z",
     "channel": "stable",
     "verification": "VERIFIED"
+  },
+  {
+    "name": "fw",
+    "version": "0.2.0",
+    "architecture": "all",
+    "platform": "fritzwulf-package-manager",
+    "depends": [],
+    "description": "Fritz.Wulf package manager with fail-closed artifact verification",
+    "download": "packages/fritzwulf/fw/0.2.0/fw-0.2.0.tar.gz",
+    "size": 5651,
+    "sha256": "281b8c39d24417b7251c22470b83e54bf067fd4f6b0d73463c61a493002b2f9e",
+    "source_ref": "Fritz-Wulf/fw@v0.2.0",
+    "source_commit": "826b42f235c3329c20c4616bba73058ab3c82cbb",
+    "compatibility": "cross-generation-client-foundation",
+    "installable": false,
+    "release_date": "2026-09-09T00:02:55Z",
+    "channel": "stable",
+    "verification": "VERIFIED"
   }
 ]
